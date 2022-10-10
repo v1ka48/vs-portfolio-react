@@ -19,3 +19,65 @@
     height: auto;
   }
 }
+
+nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -400px;
+  width: 100%;
+
+  a {
+    font-size: 22px;
+    color: #B3B3B3;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+       svg {
+        color: #EBF2FA;
+      }
+    }
+  }
+
+  a.active {
+    svg {
+      color: #0FFF35;
+    }
+  }
+}
+
+ul {
+  position: absolute;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 160px;
+
+  li {
+    a {
+      padding: 12px 0;
+      display: block;
+      font-size: 25px;
+      line-height: 16px;
+    }
+
+    &:hover {
+      .anchor-icon {
+        color: #EBF2FA;
+      }
+    }
+  }
+}
+
