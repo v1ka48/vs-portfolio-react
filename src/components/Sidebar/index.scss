@@ -30,7 +30,7 @@ nav {
   width: 100%;
 
   a {
-    font-size: 22px;
+    font-size: 28px;
     color: #B3B3B3;
     display: block;
     line-height: 51px;
@@ -67,6 +67,7 @@ ul {
 
   li {
     a {
+      color: #B3B3B3;
       padding: 12px 0;
       display: block;
       font-size: 25px;
@@ -74,10 +75,63 @@ ul {
     }
 
     &:hover {
-      .anchor-icon {
+      svg {
         color: #EBF2FA;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar { 
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+     ul, nav {
+      display: none;
+     }
+
+     nav {
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+
+      &.mobile-show {
+        display: block;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+     }
   }
 }
 

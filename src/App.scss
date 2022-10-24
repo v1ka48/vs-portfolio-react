@@ -1,19 +1,6 @@
-$primary-color: #ddd700;
+$primary-color: #0FFE35;
 
 @import 'animate.css';
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url(./assets/fonts/helvetica-neu.ttf) format('ttf');
-}
-
-@font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
-    url('./assets/fonts/LaBelleAurore.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Coolvetica';
@@ -23,7 +10,12 @@ $primary-color: #ddd700;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./assets/fonts/Rajdhani-Regular.ttf') format('ttf');
+}
+
 input,
 textarea {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Coolvetica', sans-serif;
 }

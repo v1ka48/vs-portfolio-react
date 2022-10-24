@@ -2,4 +2,66 @@
   width: 100%;
   height: 100%;
   position: absolute;
+<<<<<<< Updated upstream
   }
+=======
+}
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page {
+
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica', sans-serif;
+      color: #0FFE35;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 30px;
+      left: -10px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #EBF2FA;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      max-width: fit-content;
+      animation: pulse 2s;
+    }
+
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #EBF2FA;
+    }
+  }
+}
+>>>>>>> Stashed changes
