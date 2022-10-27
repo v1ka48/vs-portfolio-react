@@ -1,21 +1,9 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/VS_logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faGithub,
-  faYoutube,
-  faSkype,
-} from '@fortawesome/free-brands-svg-icons'
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-  faSuitcase,
-  faBars,
-  faClose,
-} from '@fortawesome/free-solid-svg-icons'
+import { RiUser3Fill, RiHome2Fill } from 'react-icons/ri'
+import { SiGmail } from 'react-icons/si'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Sidebar = () => {
   return (
@@ -30,19 +18,19 @@ const Sidebar = () => {
           exact="true"
           activeclassname="active"
           to="/">
-          <FontAwesomeIcon icon={faHome} color="#B3B3B3" />
+          <RiHome2Fill color='#B3B3B3' size='28px' />
         </NavLink>
         <NavLink 
           exact="true"
           activeclassname="active"
           to="/about">
-          <FontAwesomeIcon icon={faUser} color="#B3B3B3" />
+          <RiUser3Fill color='#B3B3B3' size='28px' />
         </NavLink>
         <NavLink 
           exact="true"
           activeclassname="active"
           to="/contact">
-          <FontAwesomeIcon icon={faEnvelope} color="#B3B3B3" />
+          <SiGmail color='#B3B3B3' />
         </NavLink>
       </nav>
       <ul>
@@ -52,11 +40,7 @@ const Sidebar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#B3B3B3"
-              className="anchor-icon"
-            />
+            <BsLinkedin color='#B3B3B3' />
           </a>
         </li>
         <li>
@@ -65,11 +49,7 @@ const Sidebar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#B3B3B3"
-              className="anchor-icon"
-            />
+            <BsGithub color='#B3B3B3' />
           </a>
         </li>
       </ul>
